@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pushup Prototype</title>
+    <style>
+        .hidden {
+            display: none !important;
+        }
+    </style>
+</head>
+<body>
+    <!-- Custom Debugger -->
+    <div id="custom-debug-log" style="background: #fee2e2; border: 2px solid #ef4444; padding: 10px; margin: 10px; font-family: monospace; border-radius: 5px;">
+        <strong>System Status:</strong> <span id="debug-text" style="color: #b91c1c;">System initializing...</span>
+    </div>
+
+
+
+    <!-- Register Box -->
+    <div id = "register-box">
+        <h2>Create an Account</h2>
+
+        <input type = "email" id = "reg-email" placeholder = "Enter Email">
+        <input type = "password" id = "reg-password" placeholder="Enter Password">
+
+        <button id = "btn-register">Sign Up</button>
+    </div>
+
+    <!-- Login Box -->
+    <div id="login-box">
+        <h2>Login</h2>
+
+        <input type="email" id="login-email" placeholder="Enter Email">
+        <input type="password" id="login-password" placeholder="Enter Password">
+
+        <button id="btn-login">Login</button>
+    </div>
+
+    <!-- UI -->
+    <div id = "pushup-tracker" class = "hidden">
+        <h1>Daily Pushup Challenge</h1>
+        
+        <!-- Target Display -->
+        <h2>Today's Target: <span id="target-display">0</span></h2>
+
+        <!-- Current Progress -->
+        <h3>Your Current Total: <span id="progress-display">0</span></h3>
+
+        <!-- Buttons -->
+        <h4>
+        <button id="btn-sub-10">-10 Pushups</button>
+        <button id="btn-sub-1">-1 Pushups</button>
+        <button id="btn-add-1">+1 Pushups</button>
+        <button id="btn-add-10">+10 Pushups</button>
+        </h4>
+        <h5><button id="btn-reset">Reset Today</button></h5>
+    </div>
+
+    <!-- The link to the Javascript file -->
+    <script type="module" src="app.js"></script>
+</body>
+</html>
+
+
+
+
