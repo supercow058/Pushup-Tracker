@@ -294,37 +294,44 @@ function updateUI() {
             alert("I said have a rest...");
             current_progress = 220;
             updateUI();
+            updateGraph();
         }
         else if (rest == 3) {
             alert("are you even listening? I said have a rest. geez");
             current_progress = 200;
             updateUI();
+            updateGraph();
         }
         else if (rest == 4) {
             alert("do you just like clicking the button or something?");
             current_progress = 180;
             updateUI();
+            updateGraph();
         }
         else if (rest == 5) {
             alert("Please stop!!!");
             current_progress = 150;
             updateUI();
+            updateGraph();
         }
         else if (rest == 6) {
             alert("Ok I admit it! There is no room to fit your pushups on the graph :(");
             current_progress = 100;
             updateUI();
+            updateGraph();
         }
         else if (rest == 7) {
             alert("wHy ArE YoU sTiLl PrEsSiING tHE bUtToN???");
             current_progress = 50;
             updateUI();
+            updateGraph();
         }
         else if (rest > 7) {
             alert("if you like pressing the button so much then press it some more :D");
             current_progress = -999;
             underZero = true;
             updateUI();
+            updateGraph();
         }
         rest ++;        
     }
