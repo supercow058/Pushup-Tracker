@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Pushup Prototype</title>
+    <title>Pushup Tracker</title>
     <style>
         .hidden {
             display: none !important;
@@ -10,9 +10,9 @@
 </head>
 <body>
     <!-- Custom Debugger -->
-    <div id="custom-debug-log" style="background: #fee2e2; border: 2px solid #ef4444; padding: 10px; margin: 10px; font-family: monospace; border-radius: 5px;">
+    <!--<div id="custom-debug-log" style="background: #fee2e2; border: 2px solid #ef4444; padding: 10px; margin: 10px; font-family: monospace; border-radius: 5px;">
         <strong>System Status:</strong> <span id="debug-text" style="color: #b91c1c;">System initializing...</span>
-    </div>
+    </div> -->
 
 
 
@@ -55,6 +55,26 @@
         </h4>
         <h5><button id="btn-reset">Reset Today</button></h5>
     </div>
+
+    <!-- Graph -->
+    <div id="graph" class = "hidden">
+        <h1 id="month-title"></h1>
+    
+        <canvas id="canvas" width="800" height="280"></canvas>
+
+        
+        <h3>
+        <button id="previous-month">⬅️</button>
+        <button id="next-month">➡️</button>
+        </h3>  
+        <h3>
+        <button id="reload-graph">Reload</button>
+        </h3> 
+        <h5>Monthly Debt</h5>
+        <h6 id="debt"></h6>     
+
+    </div>
+    
 
     <!-- The link to the Javascript file -->
     <script type="module" src="app.js"></script>
